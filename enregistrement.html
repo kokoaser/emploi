@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Enregistrement</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#">Enregistrement</a></li>
+				<li><a href="#">Menu</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form action="insert.php" method="post">
+		<fieldset>
+			<legend>Enregistrement</legend>
+			<label>Nom: </label><input type="text" name="nom" placeholder="Exp: koko"></br>
+				<label>Prenom: </label><input type="text" name="prenom" placeholder="Exp: kouassi aser"></br>
+				<label>Contact: </label><input type="tel" name="phone" placeholder="Exp: 05 -- 30 -- 27"></br>
+			<label>AEJ: </label><input type="tel" name="number " placeholder="Exp: 211--0857--4"></br>
+			<label>Motif: </label>
+			<select name="demande" id="demende">
+				<option value="emploi">Demande emploi: </option>
+				<option value="inscription">Inscription emploi</option>
+				<option value="Stage">Stage</option>
+				<option value="Formation">Formation</option>
+				<option value="Financement">Financement</option>
+				</select></br>
+		    <label>Date: </label><input type="date" name="date" /></br>
+			<label>Sexe: </label><input type="radio" name="gender" value="Homme"/>Homme
+			<input type="radio" name="gender" value="Femme"/>Femme</br>
+            <input type="submit" value="Enregistrement">
+		</fieldset>
+		</form>
+</body>
